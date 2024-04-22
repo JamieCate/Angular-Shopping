@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'CRUD-app';
+  loadedFeature = 'recipes'
+
+  showRecipes(showMe) {
+    this.loadedFeature = showMe
+    console.log(showMe, 'show me')
+  }
+
 }
